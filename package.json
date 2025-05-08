@@ -1,6 +1,6 @@
 {
   "name": "rehype-line-numbers",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Rehype plugin that adds data-line attribute to elements.",
   "keywords": [
     "rehype"
@@ -16,12 +16,11 @@
   "license": "MIT",
   "author": "Colin Robinson",
   "type": "module",
-  "exports": "./dist/esm/index.js",
-  "main": "./dist/esm/index.js",
-  "types": "./dist/esm/index.d.ts",
+  "exports": "./dist/index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist/",
-    "LICENSE",
     "README.md"
   ],
   "scripts": {
