@@ -1,0 +1,42 @@
+{
+  "name": "rehype-line-numbers",
+  "version": "0.1.0",
+  "description": "Rehype plugin that adds data-line attribute to elements.",
+  "keywords": [
+    "rehype"
+  ],
+  "homepage": "https://github.com/colinrobinsonuib/rehype-line-numbers#readme",
+  "bugs": {
+    "url": "https://github.com/colinrobinsonuib/rehype-line-numbers/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colinrobinsonuib/rehype-line-numbers.git"
+  },
+  "license": "MIT",
+  "author": "Colin Robinson",
+  "type": "module",
+  "exports": "./dist/esm/index.js",
+  "main": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
+  "files": [
+    "dist/",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "watch": "tsc --watch --project tsconfig.json --outDir ./dist",
+    "build": "rimraf dist && tsc --project tsconfig.json --outDir ./dist",
+    "example": "node examples/basic-usage.js"
+  },
+  "devDependencies": {
+    "@types/hast": "latest",
+    "rehype-parse": "^9.0.1",
+    "rehype-stringify": "^10.0.1",
+    "rimraf": "^6.0.1",
+    "to-vfile": "^8.0.0",
+    "typescript": "^5.8.3",
+    "unified": "^11.0.5",
+    "unist-util-visit": "^5.0.0"
+  }
+}
